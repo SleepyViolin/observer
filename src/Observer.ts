@@ -15,5 +15,5 @@
  */
 
 export interface Observer {
-    observeValueForKey(givenKey: string, givenNewValue: any, givenOldValue: any, givenObserved: any);
+    observeValueForKey(givenKey: string, givenNewValue: any, givenOldValue: any, givenObserved: any): void;
 }

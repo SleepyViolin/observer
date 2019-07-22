@@ -21,7 +21,7 @@ export class Observable {
 
     protected get observers(): Map<string, Set<Observer.Observer>> { return this._observers; }
 
-    public addObserverForKey(givenObserver: Observer.Observer, givenKey: string) {
+    public addObserverForKey(givenObserver: Observer.Observer, givenKey: string): void {
         if (givenObserver && typeof this[givenKey] !== `undefined`) {
             let observersForKey = this.observers.get(givenKey);
             if (observersForKey) {
@@ -34,7 +34,7 @@ export class Observable {
         }
     }
 
-    public removeObserverForKey(givenObserver: Observer.Observer, givenKey: string) {
+    public removeObserverForKey(givenObserver: Observer.Observer, givenKey: string): void {
         if (givenObserver && givenKey) {
             const observersForKey = this.observers.get(givenKey);
             if (observersForKey) {
@@ -43,7 +43,7 @@ export class Observable {
         }
     }
 
-    protected notifyObservers(givenKey: string, givenNewValue: any, givenOldValue: any) {
+    protected notifyObservers(givenKey: string, givenNewValue: any, givenOldValue: any): void {
         this.observers.forEach((observersForKey) => {
             observersForKey.forEach((observer) => {
                 observer.observeValueForKey(givenKey, givenNewValue, givenOldValue, this);

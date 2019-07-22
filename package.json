@@ -1,8 +1,9 @@
 {
-  "name": "observer",
-  "version": "1.0.0",
+  "name": "@sleepyviolin/observer",
+  "version": "1.0.2",
   "description": "a simple implementation for KVO in TypeScript",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
@@ -24,5 +25,14 @@
     "@types/node": "^12.6.8",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SleepyViolin/observer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SleepyViolin/observer/issues"
+  },
+  "homepage": "https://github.com/SleepyViolin/observer#readme"
 }

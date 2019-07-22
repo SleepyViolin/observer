@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 export interface Observer {
-    observeValueForKey(givenKey: string, givenNewValue: any, givenOldValue: any, givenObserved: any): any;
+    observeValueForKey(givenKey: string, givenNewValue: any, givenOldValue: any, givenObserved: any): void;
 }
