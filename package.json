@@ -1,7 +1,7 @@
 {
   "name": "@sleepyviolin/observer",
-  "version": "1.0.2",
-  "description": "a simple implementation for KVO in TypeScript",
+  "version": "1.0.3",
+  "description": "A simple implementation for KVO in TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
